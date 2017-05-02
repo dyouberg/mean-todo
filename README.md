@@ -41,10 +41,10 @@ I'd like for you to implement a new HTTP route when you click on a task that tak
 
 ```
 {
-	"_id" : ObjectId("5908c2c403edbc18ccfa3fc1"),
-	"text" : "Mow the Lawn",
+  "_id" : ObjectId("5908c2c403edbc18ccfa3fc1"),
+  "text" : "Mow the Lawn",
   "description" : "",
-	"created" : ISODate("2017-05-02T17:32:52.773Z"),
+  "created" : ISODate("2017-05-02T17:32:52.773Z"),
   "last_updated": ISODate("2017-05-02T17:32:52.773Z")
 }
 ```
