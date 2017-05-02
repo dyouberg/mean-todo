@@ -38,6 +38,9 @@ module.exports = function (app) {
     // [R]ead - get one todo
     app.get('/api/todos/:todo_id', function (req, res) {
         Todo.findById(req.params.todo_id, function(err, todo) {
+            if (err) {
+                res.send(err);
+            }
             res.json(todo);
         });
     });
