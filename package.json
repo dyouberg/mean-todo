@@ -1,0 +1,14 @@
+{
+  "name": "mean-stack-todos",
+  "version": "1.0.0",
+  "description": "Simple todo application.",
+  "main": "server.js",
+  "author": "dyouberg",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.7",
+    "morgan": "^1.8.1"
+  }
+}
