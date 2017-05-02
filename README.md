@@ -39,19 +39,15 @@ Create, Read, and Delete have already been completed.  Let's try to make this si
 
 I'd like for you to implement a new HTTP route when you click on a task that takes you to that item's individual page.  For instance if you have this todo:
 
+```
 {
-
 	"_id" : ObjectId("5908c2c403edbc18ccfa3fc1"),
-
 	"text" : "Mow the Lawn",
-
   "description" : "",
-
 	"created" : ISODate("2017-05-02T17:32:52.773Z"),
-
   "last_updated": ISODate("2017-05-02T17:32:52.773Z")
-  
 }
+```
 
 Clicking on the TODO should take you to `http://localhost:8080/5908c2c403edbc18ccfa3fc1` , which should display the text, description, and created date.  On this page, you should be able to update the description for the item by changing the data in an input field, and clicking an update button.  On clicking update, you should see the last_updated date become set to the new date, and all data should persist on a page refresh.
 
