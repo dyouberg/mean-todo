@@ -16,15 +16,16 @@ Please contact me if you are running windows and we can work out the installatio
 
 1. Install Node Package Manager available here: https://nodejs.org/en/download/
 2. Install MongoDB available here (Community Server Edition)... if you have Homebrew you can run `brew install mongodb`: https://www.mongodb.com/download-center#community
-3. Configure MongoDB: `sudo mkdir -p /data/db`
+3. Configure MongoDB - Create the Data Directory: `sudo mkdir -p /data/db`
 4. Grant Write Permissions on the directory: `sudo chmod 777 /data/db`
-4. Run MongoDB Daemon: `mongod`
-5. In a new tab, Run Mongo: `mongo`
+5. In a new tab, Start the MongoDB Daemon Process: `mongod`
+6. In a new tab, Run Mongo to verify that you can connect to the Mongo Shell: `mongo`
 
 ## Quickstart
 1. Clone the Repository
 2. Install the base npm modules with `npm install`.
-3. Start up the server with `node server.js`.
+3. Start up the server with `node server.js`.  If you are getting a MongoDB error,
+remember to launch mongod in a new tab or window.
 4. View in browser at `http://localhost:8080`.
 
 ## Project Layout
@@ -72,7 +73,3 @@ I've completed the database call in `routes.js`, the GET by ID and PUT API reque
 2. You could consider adding a 'priority' feature to the todo list.  This could be a dropdown select box with a few color priorities ranging from high to low.  Then on the parent page, you could add a way to only show high priority items.  
 
 This doesn't need to involve any database querying or page changes, it can be a javascript filter to match the current selection.
-
-
-
-
